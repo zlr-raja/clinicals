@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: var(--font-family); 
+}
+.box--center-container{ 
+    background-color: var(--color-blog);    
+    margin: 0 auto;
+    padding:0.1rem;
+}
+.box--header--bg{
+    background-color: var(--color-bg);    
+}
+.box-space-between{
+    display: flex;  
+}
+.box-space-between div{
+    width: 10rem;
+    padding: 1.5rem;
+    border:1px solid var(--color-bg);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.box-space-between div a{
+    color:var(--color-white)
+}
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.btn{
+    color: var(--color-white);
+    padding: 1rem;
+    display: block;
+    background-color: var(--color-bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+    background-color: var(--color-blog);    
+    margin: 0 auto;
+    padding:1rem;
+    margin: 1rem 0;
+    width: 300px; 
+    border-radius: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form .field{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form .field label{
+    padding-bottom: 0.4rem;
 }
-
-.App-link {
-  color: #61dafb;
+form .field input,
+form .field select{
+    padding: 8px; 
+    border-radius: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button{
+    padding: 0.8rem;
+    background-color: var(--color-bg); 
+    border: 0;
+    color: var(--color-white);
+    margin: 1rem 0 ;
+    border-radius: 8px;
 }
